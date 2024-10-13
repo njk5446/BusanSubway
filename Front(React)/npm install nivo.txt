@@ -1,0 +1,1 @@
+npm install @nivo/heatmap @nivo/line @nivo/baadsadsr @nivo/pie
