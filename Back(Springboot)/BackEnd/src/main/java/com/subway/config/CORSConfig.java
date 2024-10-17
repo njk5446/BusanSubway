@@ -29,9 +29,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/login/**")
 		.allowCredentials(true)
@@ -44,8 +45,10 @@ public class CORSConfig implements WebMvcConfigurer {
 		.allowedOrigins(
 				"http://localhost:3000",
 				"http://127.0.0.1:3000",
-				"http://192.168.45.203:3000",
-				"http://192.168.45.203.nip.io:3000");
+				"http://192.168.0.131:3000",
+				"http://192.168.0.126:3000",
+				"http://192.168.0.131.nip.io:3000",
+				"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/signup/**")
 				.allowedHeaders(HttpHeaders.CONTENT_TYPE)
@@ -55,9 +58,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/board/**")
 				.allowCredentials(true)
@@ -66,9 +70,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		registry.addMapping("/search/**")
 		.allowCredentials(true)
 		.allowedMethods(
@@ -76,9 +81,10 @@ public class CORSConfig implements WebMvcConfigurer {
 		.allowedOrigins(
 				"http://localhost:3000",
 				"http://127.0.0.1:3000",
-				"http://192.168.45.203:3000",
+				"http://192.168.0.131:3000",
 				"http://192.168.0.126:3000",
-				"http://192.168.45.203.nip.io:3000");
+				"http://192.168.0.131.nip.io:3000",
+				"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/write**")
 				.allowCredentials(true)
@@ -89,9 +95,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/edit**")
 				.allowCredentials(true)
@@ -101,9 +108,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/checkUser**")
 				.allowCredentials(true)
@@ -113,9 +121,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/delete**")
 				.allowCredentials(true)
@@ -125,9 +134,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/mypage/**")
 				.allowCredentials(true)
@@ -140,9 +150,10 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 		
 		registry.addMapping("/subway/**")
 				.allowCredentials(true)
@@ -152,8 +163,9 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:3000",
 						"http://127.0.0.1:3000",
-						"http://192.168.45.203:3000",
+						"http://192.168.0.131:3000",
 						"http://192.168.0.126:3000",
-						"http://192.168.45.203.nip.io:3000");
+						"http://192.168.0.131.nip.io:3000",
+						"http://192.168.0.126.nip.io:3000");
 	}
 }

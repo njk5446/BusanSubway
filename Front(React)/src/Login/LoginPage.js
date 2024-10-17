@@ -9,6 +9,7 @@ import { loginModalAtom } from "../LoginModalAtom";
 
 
 const url = process.env.REACT_APP_API_URL;
+const googleURL = process.env.REACT_APP_GOOGLE_API_URL;
 
 const LoginPage = () => {
   const [inputUserId, setInputUserId] = useState("");
@@ -24,7 +25,7 @@ const LoginPage = () => {
 
   const handleGoogleLogin = () => {
     // 사용자를 Google OAuth2 인증 페이지로 리디렉션
-    window.location.href = 'http://192.168.45.203.nip.io:8080/oauth2/authorization/google';
+    window.location.href = googleURL;
   }
 
   const handleLogin = async (event) => {

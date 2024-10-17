@@ -19,8 +19,6 @@ const SignupPage = () => {
 
     const MAX_LENGTH = 16;
 
-    
-
     useEffect(() => {
         setIDChecked(false)
     }, [idRef.current.value])
@@ -41,25 +39,25 @@ const SignupPage = () => {
             `${url}signup/checkid`, checkIDPayload, {
             headers: { "Content-Type": "application/json", }
         })
-            .then(resp => {
-                if (resp.status === 200) {
-                    setUserId(idRef.current.value);
-                    alert("사용 가능한 ID 입니다.");
-                    setIDChecked(true)
-                }
-            })
-            .catch(error => {
-                // Axios 오류 처리
-                if (error.response && error.response.status === 409) {
-                    // 중복된 ID일 때
-                    alert("중복된 ID입니다.");
-                    setIDChecked(false);
-                } else {
-                    // 다른 오류 처리
-                    console.error('Error: ', error);
-                    alert('중복 확인 중 오류가 발생했습니다.');
-                }
-            });
+        .then(resp => {
+            if (resp.status === 200) {
+                setUserId(idRef.current.value);
+                alert("사용 가능한 ID 입니다.");
+                setIDChecked(true)
+            }
+        })
+        .catch(error => {
+            // Axios 오류 처리
+            if (error.response && error.response.status === 409) {
+                // 중복된 ID일 때
+                alert("중복된 ID입니다.");
+                setIDChecked(false);
+            } else {
+                // 다른 오류 처리
+                console.error('Error: ', error);
+                alert('중복 확인 중 오류가 발생했습니다.');
+            }
+        });
 
     };
 
@@ -78,7 +76,6 @@ const SignupPage = () => {
         const randomNick = await generateRandomNickname(); // 현재 randomNick에 mypage/randomnick의 text를 저장
         setNickname(randomNick); // 닉네임에 저장하면 nickName에 출력된다
     }
-
 
     const handleSignup = async (e) => {
         e.preventDefault(); // 새로고침 막기

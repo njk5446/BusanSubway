@@ -52,7 +52,7 @@ public class BoardController {
 
 	// 게시판에 글 쓰기(POST)
 	@PostMapping("/write")
-	public ResponseEntity<?> writeBoard(@RequestParam(name = "sno") int station_no,
+	public ResponseEntity<?> writeBoard(@RequestParam(name = "sno", defaultValue = "95") int station_no,
 			@RequestBody Board board) {
 		try {
 			bs.saveBoard(station_no, board);
