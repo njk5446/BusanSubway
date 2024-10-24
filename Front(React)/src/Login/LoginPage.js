@@ -25,7 +25,8 @@ const LoginPage = () => {
 
   const handleGoogleLogin = () => {
     // 사용자를 Google OAuth2 인증 페이지로 리디렉션
-    window.location.href = 'http://192.168.55.203.nip.io:8080/oauth2/authorization/google';
+    // window.location.href = "http://192.168.55.203.nip.io:8081/oauth2/authorization/code/google"; // 로컬
+    window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 공공
   }
 
   const handleLogin = async (event) => {
@@ -36,7 +37,7 @@ const LoginPage = () => {
       return;
     }
     setLoading(true)
-
+    console.log("url 확인: " + url);
     await axios.post(  //axios는 응답을 json으로 자동변환해줌
       `${url}login`,
       { // 서버로 보낼 데이터
