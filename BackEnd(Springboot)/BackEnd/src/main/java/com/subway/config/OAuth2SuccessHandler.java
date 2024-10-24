@@ -61,6 +61,6 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 		}
 		String jwtToken = JWTUtil.getJWT(username).substring(7);
 
-		response.sendRedirect("http://192.168.0.131:3000/checkToken?token=" + jwtToken);
+		response.sendRedirect("http://192.168.55.203:3000/checkToken?token=" + jwtToken);
 	}
 }

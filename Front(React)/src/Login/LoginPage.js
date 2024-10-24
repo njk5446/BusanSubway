@@ -25,7 +25,7 @@ const LoginPage = () => {
 
   const handleGoogleLogin = () => {
     // 사용자를 Google OAuth2 인증 페이지로 리디렉션
-    window.location.href = googleURL;
+    window.location.href = 'http://192.168.55.203.nip.io:8080/oauth2/authorization/google';
   }
 
   const handleLogin = async (event) => {
