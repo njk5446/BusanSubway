@@ -19,6 +19,7 @@ const BoardList = ({ sno, sname }) => {
     const [writing, setWriting] = useState();
     const [selectedBoard, setSelectedBoard] = useState(); // 선택된 게시물 상태 추가
     const [searchMode, setSearchMode] = useState(false); // 검색 모드 상태 추가
+    const [searchParams, setSearchParams] = useState(null); // 검색 파라미터 저장
     const inputRef = useRef();
     const selectRef = useRef();
 
@@ -40,12 +41,17 @@ const BoardList = ({ sno, sname }) => {
 
     const searchBoard = async (pageNumber = 0) => { // 검색 함수에 페이지 번호 추가
         let keyword = inputRef.current.value.trim();
+        let searchType = selectRef.current.value;
 
         if (keyword.length < 2) {
             alert("2글자 이상 입력해주세요.");
             inputRef.current.focus();
             return;
         }
+
+        // 검색 파라미터 저장
+        setSearchParams({ searchType, keyword });
+
         try {
             const resp = await axios.get(`${url}board/search?searchType=${selectRef.current.value}&keyword=${keyword}&sno=${sno}`);
             const results = resp.data.content;
@@ -83,11 +89,25 @@ const BoardList = ({ sno, sname }) => {
         }
     };
 
-    const handlePageChange = (pageNumber) => {
-        if (searchMode) {
-            searchBoard(pageNumber - 1); // 검색 모드에서 검색 함수 호출
+    const handlePageChange = async (pageNumber) => {
+        if (searchMode && searchParams) {
+            const { searchType, keyword } = searchParams;
+            try {
+                const resp = await axios.get(
+                    `${url}board/search?searchType=${searchType}&keyword=${keyword}&sno=${sno}&page=${pageNumber - 1}`
+                );
+                setBoardList(resp.data.content);
+                setPage({
+                    size: resp.data.page.size,
+                    number: resp.data.page.number,
+                    totalElements: resp.data.page.totalElements,
+                    totalPages: resp.data.page.totalPages,
+                });
+            } catch (error) {
+                console.error("검색 결과 페이지를 가져오는데 실패했습니다.", error);
+            }
         } else {
-            getBoardList(pageNumber - 1); // 일반 모드에서 게시물 목록 함수 호출
+            getBoardList(pageNumber - 1);
         }
     };
 
