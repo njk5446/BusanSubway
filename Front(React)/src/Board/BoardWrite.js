@@ -114,4 +114,5 @@ const BoardWrite = ({ onSave, backToList, myboard }) => {
     );
 };
 
+
 export default BoardWrite;

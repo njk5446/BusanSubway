@@ -46,14 +46,29 @@ public class LoginService {
 		else
 			return ResponseEntity.ok("사용 가능한 ID");
 	}
-
-	// OAuth2.0 로그인시 유저 검증
+	
+	// OAuth2.0 로그인 시 유저 검증
 	public ResponseEntity<?> checkOAuth() {
-		String userid = getUserIDFromToken();
-		Optional<Member> mem = mr.findById(userid);
-		String password = mem.get().getPassword();
-		if (enc.matches("1a2s1a2s3d4f3d4f", password)) return ResponseEntity.accepted().body("");
-		else return ResponseEntity.status(HttpStatus.CONFLICT).body("");
+	    String userid = getUserIDFromToken();
+	    System.out.println("유저아이디: " + userid);
+	    Optional<Member> mem = mr.findById(userid);
+	    System.out.println("member 찾기: " + mem);
+
+	    if (mem.isPresent()) {
+	        String password = mem.get().getPassword();
+	        
+	        // 초기 비밀번호와 일치하는지 확인
+	        if (enc.matches("1a2s1a2s3d4f3d4f", password)) {
+	            // 초기 비밀번호인 경우, 비밀번호 변경 필요
+	            return ResponseEntity.accepted().body("첫 로그인이므로 비밀번호 변경이 필요합니다.");
+	        } else {
+	            // 비밀번호가 다를 경우, 로그인 성공
+	            return ResponseEntity.status(HttpStatus.OK).body(userid);
+	        }
+	    }
+	    
+	    // 사용자 정보가 없을 경우
+	    return ResponseEntity.status(HttpStatus.NOT_FOUND).body("사용자를 찾을 수 없습니다.");
 	}
 
 }

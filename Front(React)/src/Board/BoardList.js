@@ -5,7 +5,6 @@ import BoardDetail from "./BoardDetail";
 import BoardWrite from "./BoardWrite";
 
 const url = process.env.REACT_APP_API_URL;
-const token = sessionStorage.getItem("token");
 
 const BoardList = ({ sno, sname }) => {
     const [refresh, setRefresh] = useState(0);
@@ -98,6 +97,7 @@ const BoardList = ({ sno, sname }) => {
     };
 
     const handleWriteClick = () => {
+        const token = sessionStorage.getItem("token");
         if (!token) {
             alert("로그인 후 이용 가능합니다.");
             return;
