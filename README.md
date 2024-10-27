@@ -108,7 +108,7 @@
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
         <li>차트 드릴링</li>
-        <li>기간, 월, 주, 일 단위 탑승객 수 시각화/li>
+        <li>기간, 월, 주, 일 단위 탑승객 수 시각화</li>
         <li>역 별 실시간 공기질 데이터 시각화</li>
       </ul>
     </td>
