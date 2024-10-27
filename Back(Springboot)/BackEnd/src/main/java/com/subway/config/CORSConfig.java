@@ -30,9 +30,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -48,8 +50,11 @@ public class CORSConfig implements WebMvcConfigurer {
 				"http://localhost:4000",
 				"http://127.0.0.1:4000",
 				"http://192.168.0.131:4000",
-				"http://192.168.55.203:4000",
 				"http://192.168.0.131.nip.io:4000",
+				"http://192.168.0.131.nip.io:8081",
+				"http://192.168.55.203:4000",
+				"http://192.168.55.203.nip.io:4000",
+				"http://192.168.55.203.nip.io:8081",
 				"http://58.235.21.221.nip.io:4000",
 				"http://58.235.21.221.nip.io:9998");
 		
@@ -62,8 +67,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -75,10 +83,14 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
+		
 		registry.addMapping("/search/**")
 		.allowCredentials(true)
 		.allowedMethods(
@@ -87,8 +99,11 @@ public class CORSConfig implements WebMvcConfigurer {
 				"http://localhost:4000",
 				"http://127.0.0.1:4000",
 				"http://192.168.0.131:4000",
-				"http://192.168.55.203:4000",
 				"http://192.168.0.131.nip.io:4000",
+				"http://192.168.0.131.nip.io:8081",
+				"http://192.168.55.203:4000",
+				"http://192.168.55.203.nip.io:4000",
+				"http://192.168.55.203.nip.io:8081",
 				"http://58.235.21.221.nip.io:4000",
 				"http://58.235.21.221.nip.io:9998");
 		
@@ -102,8 +117,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -116,8 +134,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -130,8 +151,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -144,8 +168,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -161,8 +188,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 		
@@ -175,8 +205,11 @@ public class CORSConfig implements WebMvcConfigurer {
 						"http://localhost:4000",
 						"http://127.0.0.1:4000",
 						"http://192.168.0.131:4000",
-						"http://192.168.55.203:4000",
 						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
 						"http://58.235.21.221.nip.io:9998");
 	}

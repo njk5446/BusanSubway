@@ -25,8 +25,9 @@ const LoginPage = () => {
 
   const handleGoogleLogin = () => {
     // 사용자를 Google OAuth2 인증 페이지로 리디렉션
-    // window.location.href = "http://192.168.55.203.nip.io:8081/oauth2/authorization/code/google"; // 로컬
-    window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 공공
+    // window.location.href = "http://localhost:8081/oauth2/authorization/google"; // 로컬
+    window.location.href = "http://192.168.55.203.nip.io:8081/oauth2/authorization/google"; // 로컬
+    // window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 공공
   }
 
   const handleLogin = async (event) => {

@@ -62,9 +62,9 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 		String jwtToken = JWTUtil.getJWT(username).substring(7);
 		
 		// 배포용 연결
-		response.sendRedirect("http://58.235.21.221:4000/checkToken?token=" + jwtToken);
+//		response.sendRedirect("http://58.235.21.221:4000/checkToken?token=" + jwtToken);
 
 		// 로컬(개발용) 연결 
-//		response.sendRedirect("http://192.168.55.203:4000/checkToken?token=" + jwtToken);
+		response.sendRedirect("http://192.168.55.203:4000/checkToken?token=" + jwtToken);
 	}
 }
