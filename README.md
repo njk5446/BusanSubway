@@ -77,7 +77,6 @@
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
-        <li></li>
         <li>Google 로그인 시 임의의 아이디, 닉네임 생성</li>
         <li>최초 로그인 시 비밀번호 변경 필요</li>
       </ul>
@@ -102,19 +101,18 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://youtu.be/Ni84VvYxORA?feature=shared">
-        <img src="./images/위험예측분석대시보드.png" alt="위험 예측 분석 대시보드" width="300">
+      <a href="https://youtu.be/kTGfcemsXsQ">
+        <img src="./images/게시판.png" alt="게시판" width="300">
       </a>
       <br />
-      <strong style="display: block;">위험 예측 분석 대시보드</strong>
+      <strong style="display: block;">게시판</strong>
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
-        <li>일자별, 작업자별 위험 예측 데이터 시각화</li>
-        <li>셀렉트 박스로 작업일자와 작업자 선택</li>
-        <li>nivo의 Heatmap, Bar 차트 활용</li>
-        <li>특정 작업자의 해당일자의 시간대별 위험 주의 빈도</li>
-        <li>활동별 위험 빈도</li>
+        <li>역 별 게시판</li>
+        <li>게시물 검색, 글쓰기, 수정, 삭제</li>
+        <li>게시판 페이지네이션</li>
+        <li></li>
       </ul>
     </td>
   </tr>
