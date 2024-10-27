@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const url = process.env.REACT_APP_API_URL;
 
-const CheckToken = () => {
+const OAuthLogin = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -59,6 +59,9 @@ const CheckToken = () => {
     });
   };
 
+  // OAuth 로그인 성공시 백엔드에서 리다이렉트한다 이 주소로 
+  // http://192.168.55.203:4000/checkToken?token=" + jwtToken
+  // 의존성 배열에 따라 url이 바뀌면 해당 useEffect 실행해서 token을 뽑아내서 sessionStorage에 token 저장 
   useEffect(() => {
     const parseToken = new URLSearchParams(location.search);
     const token = "Bearer " + parseToken.get('token');
@@ -70,7 +73,11 @@ const CheckToken = () => {
       navigate("/login");
     }
   }, [location.search, navigate]);
+  // useLocation의 location.search는 현재 url의 위치, 즉 페이지가 변경되면 
+  // 이 useEffect가 실행되므로 http://192.168.55.203:4000/checkToken?token=" + jwtToken으로 리디렉션되고나서 이것에 있는 토큰을 뽑아온다
 
+  // token 저장 이후 유효한 사용자인지 검증
+  // 처음 OAuth로 로그인한(비밀번호 변경하지 않은) 사용자인지 아닌지 검증
   const checkUser = async (token) => {
     setLoading(true);
 
@@ -141,4 +148,4 @@ const CheckToken = () => {
   }
 };
 
-export default CheckToken;
+export default OAuthLogin;

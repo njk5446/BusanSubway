@@ -50,9 +50,7 @@ public class LoginService {
 	// OAuth2.0 로그인 시 유저 검증
 	public ResponseEntity<?> checkOAuth() {
 	    String userid = getUserIDFromToken();
-	    System.out.println("유저아이디: " + userid);
 	    Optional<Member> mem = mr.findById(userid);
-	    System.out.println("member 찾기: " + mem);
 
 	    if (mem.isPresent()) {
 	        String password = mem.get().getPassword();

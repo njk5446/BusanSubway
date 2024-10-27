@@ -10,7 +10,7 @@ import SignupPage from './Login/SignupPage';
 import MyBoards from './MyPage/MyBoards';
 import MyPage from './MyPage/Mypage';
 import UserProfile from './MyPage/UserProfile';
-import CheckToken from './Login/CheckToken';
+import CheckToken from './Login/OAuthLogin';
 import Nav from './pages/Nav';
 import { useEffect, useState } from 'react';
 import LoadingOverlay from './Loading/LoadingOverlay';
