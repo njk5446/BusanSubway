@@ -27,8 +27,8 @@ const LoginPage = () => {
   // 인증 페이지에서 로그인 성공하면, http://192.168.55.203:4000/checkToken?token=" + jwtToken 으로 리디렉션된다.
   const handleGoogleLogin = () => {
     // window.location.href = "http://localhost:8081/oauth2/authorization/google"; // 로컬
-    window.location.href = "http://192.168.55.203.nip.io:8081/oauth2/authorization/google"; // 로컬
-    // window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 공공
+    // window.location.href = "http://192.168.55.203.nip.io:8081/oauth2/authorization/google"; // 로컬
+    window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 배포 IP
   }
 
   const handleLogin = async (event) => {
