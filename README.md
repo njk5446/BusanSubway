@@ -57,7 +57,7 @@
         <img src="./images/일반로그인.png" alt="일반 로그인" width="300">
       </a>
       <br />
-      <strong style="display: block;">로그인</strong>
+      <strong style="display: block;">로그인/회원가입</strong>
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
@@ -84,6 +84,21 @@
   </tr>
   <tr>
     <td align="center">
+      <a href="https://youtu.be/fIu-_g7uaGc">
+        <img src="./images/이미지맵.png" alt="이미지맵" width="300">
+      </a>
+      <br />
+      <strong style="display: block;">노선도 이미지맵</strong>
+    </td>
+    <td style="vertical-align: top; padding-left: 20px;">
+      <ul>
+        <li>역 별 좌표값 지정</li>
+        <li>좌표 고정 및 노선도 확대/축소 드래그 기능</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <a href="https://youtu.be/Tbor9uAyhOA">
         <img src="./images/대시보드.png" alt="대시보드" width="300">
       </a>
@@ -92,9 +107,8 @@
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
-        <li>역 별 좌표값 지정</li>
-        <li>좌표 고정 및 노선도 확대/축소 드래그 기능</li>
-        <li>차트 드릴링 기능을 통해 클릭한 지하철 역의 탑승객 수를 기간, 월, 주, 일별로 시각화화</li>
+        <li>차트 드릴링</li>
+        <li>기간, 월, 주, 일 단위 탑승객 수 시각화/li>
         <li>역 별 실시간 공기질 데이터 시각화</li>
       </ul>
     </td>
@@ -112,29 +126,12 @@
         <li>역 별 게시판</li>
         <li>게시물 검색, 글쓰기, 수정, 삭제</li>
         <li>게시판 페이지네이션</li>
-        <li></li>
       </ul>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://youtu.be/ZXVSq8vKsf8?feature=shared">
-        <img src="./images/공지사항.png" alt="공지사항" width="300">
-      </a>
-      <br />
-      <strong style="display: block;">공지사항</strong>
-    </td>
-    <td style="vertical-align: top; padding-left: 20px;">
-      <ul>
-        <li>페이지네이션 기능</li>
-        <li>제목, 내용, 이름으로 검색 필터링 제공</li>
-        <li>사용자는 자신의 게시물만 수정 및 삭제 가능</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://youtu.be/CI-VMvWaQaY?feature=shared">
+      <a href="https://youtu.be/raKXPBM7xyc">
         <img src="./images/마이페이지.png" alt="마이페이지" width="300">
       </a>
       <br />
@@ -142,23 +139,10 @@
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
       <ul>
-        <li>마이페이지 접속 시 비밀번호 검증</li>
-        <li>비밀번호 및 부서 변경 기능</li>
+        <li>마이페이지 접근 시 비밀번호 검증</li>
+        <li>비밀번호 및 닉네임 변경(랜덤 닉네임 생성)</li>
+        <li>내가 쓴 게시글 조회</li>
         <li>회원탈퇴 기능</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://youtu.be/WCR1UOIg68c?feature=shared">
-        <img src="./images/위험알림.png" alt="위험 알림" width="300">
-      </a>
-      <br />
-      <strong style="display: block;">위험 알림</strong>
-    </td>
-    <td style="vertical-align: top; padding-left: 20px;">
-      <ul>
-        <li>웹소켓 수신 위험 예측 데이터 기반으로 위험 알림 시각화</li>
       </ul>
     </td>
   </tr>
