@@ -47,9 +47,11 @@ const ZoomPanComponent = () => {
     };
   }, []);
 
-  // 줌 핸들러
+  // 줌 핸들러 (마우스 휠)
   const handleZoom = useCallback((e) => {
-    const zoomAmount = e.deltaY * -0.002;
+    const zoomAmount = e.deltaY * -0.002; 
+    // 확대(양수): e.deltaY(-) * (-0.02) = (+) 양수
+    // 축소(음수): e.deltaY(+) * (-0.02) = (-) 음수
     setScale((prevScale) => {
       const newScale = Math.min(Math.max(prevScale + zoomAmount, 0.15), 1);
       return newScale;
@@ -73,7 +75,7 @@ const ZoomPanComponent = () => {
     }
   }, [scale]);
 
-  // 패닝 터치 핸들러
+  // 패닝 터치 핸들러 (휴대폰 )
   const handleTouchMove = useCallback((e) => {
     if (e.touches.length === 2) {
       const distance = Math.hypot(
