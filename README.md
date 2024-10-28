@@ -42,7 +42,7 @@
 
 ## 🏗️ 시스템 아키텍처
 
-![시스템 아키텍처](./images/BusanSubway_System_Architecture.png)
+![시스템 아키텍처](./images/BusanSubway_System_Architectures.png)
 
 <br />
 
