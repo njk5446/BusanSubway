@@ -28,7 +28,8 @@ const LoginPage = () => {
   const handleGoogleLogin = () => {
     // window.location.href = "http://localhost:8081/oauth2/authorization/google"; // 로컬
     // window.location.href = "http://192.168.55.203.nip.io:8081/oauth2/authorization/google"; // 로컬
-    window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 배포 IP
+    // window.location.href = "http://58.235.21.221.nip.io:9998/oauth2/authorization/google"; // 배포 IP
+    window.location.href = googleURL;
   }
 
   const handleLogin = async (event) => {
