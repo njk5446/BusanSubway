@@ -34,7 +34,8 @@
 
 <br />
 
-[**🔗 배포된 웹 서비스로 바로가기 Click !**](http://58.235.21.221:4000/) 👈
+[**🔗 배포된 웹 서비스로 바로가기 Click !**](http://58.235.21.221:4000/) 👈 <br />
+<a>(임시 ID: admin1, PW: 111111)</a>
 
 > 새 창 열기 방법 : CTRL+click (on Windows and Linux) | CMD+click (on MacOS)
 
