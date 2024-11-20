@@ -29,32 +29,40 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/login/**")
-		.allowCredentials(true)
-		.allowedHeaders(HttpHeaders.CONTENT_TYPE,
-				HttpHeaders.AUTHORIZATION)
-		.exposedHeaders(HttpHeaders.AUTHORIZATION) 
-		.allowedMethods(
-				HttpMethod.GET.name(),
-				HttpMethod.POST.name())
-		.allowedOrigins(
-				"http://localhost:4000",
-				"http://192.168.0.131:4000",
-				"http://192.168.0.131.nip.io:4000",
-				"http://192.168.0.131.nip.io:8081",
-				"http://192.168.55.203:4000",
-				"http://192.168.55.203.nip.io:4000",
-				"http://192.168.55.203.nip.io:8081",
-				"http://58.235.21.221.nip.io:4000",
-				"http://58.235.21.221.nip.io:9998");
+				.allowCredentials(true)
+				.allowedHeaders(HttpHeaders.CONTENT_TYPE,
+						HttpHeaders.AUTHORIZATION)
+				.exposedHeaders(HttpHeaders.AUTHORIZATION) 
+				.allowedMethods(
+						HttpMethod.GET.name(),
+						HttpMethod.POST.name())
+				.allowedOrigins(
+						"http://localhost:4000",
+						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
+						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
+						"http://58.235.21.221.nip.io:4000",
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/signup/**")
 				.allowedHeaders(HttpHeaders.CONTENT_TYPE)
@@ -64,13 +72,17 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/board/**")
 				.allowCredentials(true)
@@ -79,28 +91,36 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/search/**")
-		.allowCredentials(true)
-		.allowedMethods(
-				HttpMethod.GET.name())
-		.allowedOrigins(
-				"http://localhost:4000",
-				"http://192.168.0.131:4000",
-				"http://192.168.0.131.nip.io:4000",
-				"http://192.168.0.131.nip.io:8081",
-				"http://192.168.55.203:4000",
-				"http://192.168.55.203.nip.io:4000",
-				"http://192.168.55.203.nip.io:8081",
-				"http://58.235.21.221.nip.io:4000",
-				"http://58.235.21.221.nip.io:9998");
+				.allowCredentials(true)
+				.allowedMethods(
+						HttpMethod.GET.name())
+				.allowedOrigins(
+						"http://localhost:4000",
+						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
+						"http://192.168.0.131.nip.io:4000",
+						"http://192.168.0.131.nip.io:8081",
+						"http://192.168.55.203:4000",
+						"http://192.168.55.203.nip.io:4000",
+						"http://192.168.55.203.nip.io:8081",
+						"http://58.235.21.221.nip.io:4000",
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/write**")
 				.allowCredentials(true)
@@ -111,13 +131,17 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/edit**")
 				.allowCredentials(true)
@@ -127,13 +151,17 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/checkUser**")
 				.allowCredentials(true)
@@ -143,13 +171,17 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/delete**")
 				.allowCredentials(true)
@@ -159,13 +191,17 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/mypage/**")
 				.allowCredentials(true)
@@ -178,13 +214,17 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 		
 		registry.addMapping("/subway/**")
 				.allowCredentials(true)
@@ -194,12 +234,16 @@ public class CORSConfig implements WebMvcConfigurer {
 				.allowedOrigins(
 						"http://localhost:4000",
 						"http://192.168.0.131:4000",
+						"http://3.36.158.138:4000",
 						"http://192.168.0.131.nip.io:4000",
 						"http://192.168.0.131.nip.io:8081",
 						"http://192.168.55.203:4000",
 						"http://192.168.55.203.nip.io:4000",
 						"http://192.168.55.203.nip.io:8081",
 						"http://58.235.21.221.nip.io:4000",
-						"http://58.235.21.221.nip.io:9998");
+						"http://58.235.21.221.nip.io:9998",
+						"http://3.36.158.138.nip.io:4000",
+						"http://3.36.158.138.nip.io:8081"
+						);
 	}
 }

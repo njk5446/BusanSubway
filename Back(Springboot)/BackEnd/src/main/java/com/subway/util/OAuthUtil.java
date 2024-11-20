@@ -8,9 +8,9 @@ public class OAuthUtil {
 		String userString = user.toString();
 		String regName = null;
 		// userString에 들어있는 값 예시
-		// 유저스트링: Name: [115030463058512208559], Granted Authorities: [[OAUTH2_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, 
-		// SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{sub=115030463058512208559, name=홍길동, given_name=길동, 
-		// family_name=홍, picture=https://lh3.googleusercontent.com/a/ACg8ocKn6ke5ULv2Ipbh3cpd478N5gUP4JoVOjfJvrBbun7JMByRjms=s96-c, email=example@gmail.com, email_verified=true}]
+		// 유저스트링: Name: [12112323214851222359], Granted Authorities: [[OAUTH2_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, 
+		// SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{sub=12323503123124252208559, name=홍길동, given_name=길동, 
+		// family_name=홍, picture=https://lh3.googleusercontent.com/a/ACg8fofdkwej42dcfgpbh3cpd478N5gUP4JoVOjfJvrBbun7JMByRjms=s96-c, email=example@gmail.com, email_verified=true}]
 		
 		// userString의 Name의 문자열 표현을 보고 google, naver, kakao 어떤 제공자의 인증인지 구별하도록 구조화되어있음
 		if (userString.contains("google"))	regName = "Google";
