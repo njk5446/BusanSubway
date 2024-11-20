@@ -51,7 +51,7 @@ public interface BoardRepository extends JpaRepository<Board, Integer> {
 	
 	// 게시글 삭제
 	@Modifying
-	@Query(value = "DELETE FROM Board b WHERE b.idx=:idx AND b.userid = :userid", nativeQuery = true)
+	@Query(value = "DELETE FROM board b WHERE b.idx=:idx AND b.userid = :userid", nativeQuery = true)
 	int deleteBoardByUserID(@Param("userid") String userid, @Param("idx") int idx);
 	
 	/* -- 아래는 Station 데이터 조회용 네이티브 쿼리문 메서드들 -- */
