@@ -40,7 +40,6 @@ const LoginPage = () => {
       return;
     }
     setLoading(true)
-    console.log("url 확인: " + url);
     await axios.post(  //axios는 응답을 json으로 자동변환해줌
       `${url}login`,
       { // 서버로 보낼 데이터
@@ -68,9 +67,7 @@ const LoginPage = () => {
       alert("아이디 혹은 비밀번호가 틀렸습니다.");
     })
       .finally(() => {
-        console.log(token);
         setLoading(false) // 처리중 메시지 
-        console.log(token);
       })
   }
 

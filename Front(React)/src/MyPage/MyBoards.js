@@ -188,7 +188,6 @@ const MyBoards = () => {
     const handleTitleClick = async (board) => {
         try {
             setIdx(board.idx);
-            console.log(board.idx)
             const resp = await axios.get(`${url}board/view?idx=${board.idx}`);
             setSelectedBoard(resp.data); // 선택된 게시물 상세 내용 상태 설정
         } catch (error) {

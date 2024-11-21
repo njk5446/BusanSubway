@@ -83,7 +83,7 @@ export default function DashBoard({ setSname }) {
           setFetchedData(resp.data);
         })
     } catch (error) {
-      console.log("에러발생 : " + error);
+      console.error("에러발생 : " + error);
     } finally {
       setLoading(false);
     }
